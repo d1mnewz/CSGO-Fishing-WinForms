@@ -1,0 +1,8 @@
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\FishingNative.Form1.resources
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\FishingNative.csproj.GenerateResource.Cache
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\bin\Debug\CSGOLottery.exe.config
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\bin\Debug\CSGOLottery.exe
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\bin\Debug\CSGOLottery.pdb
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\CSGOLottery.Properties.Resources.resources
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\CSGOLottery.exe
+c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\CSGOLottery.pdb
