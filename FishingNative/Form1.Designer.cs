@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SteamLabel = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
-            this.LoginLabel = new System.Windows.Forms.Label();
-            this.PasswordLabel = new System.Windows.Forms.Label();
-            this.EmailLabel = new System.Windows.Forms.Label();
-            this.PasswordEmailLabel = new System.Windows.Forms.Label();
-            this.LoginTextBox = new System.Windows.Forms.TextBox();
-            this.PasswordTextBox = new System.Windows.Forms.TextBox();
-            this.EmailTextBox = new System.Windows.Forms.TextBox();
-            this.PasswordEmailTextBox = new System.Windows.Forms.TextBox();
             this.CSGOImagePanel = new System.Windows.Forms.Panel();
+            this.PasswordEmailTextBox = new System.Windows.Forms.TextBox();
+            this.EmailTextBox = new System.Windows.Forms.TextBox();
+            this.PasswordTextBox = new System.Windows.Forms.TextBox();
+            this.LoginTextBox = new System.Windows.Forms.TextBox();
+            this.PasswordEmailLabel = new System.Windows.Forms.Label();
+            this.EmailLabel = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.LoginLabel = new System.Windows.Forms.Label();
             this.SteamLogoPanel = new System.Windows.Forms.Panel();
             this.ProgressBar = new System.Windows.Forms.ProgressBar();
             this.FinalButton = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             // 
             this.SteamLabel.AutoSize = true;
             this.SteamLabel.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SteamLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.SteamLabel.Location = new System.Drawing.Point(226, 18);
             this.SteamLabel.Name = "SteamLabel";
             this.SteamLabel.Size = new System.Drawing.Size(63, 23);
@@ -72,83 +73,15 @@
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(200, 307);
             this.MainPanel.TabIndex = 2;
-           
             // 
-            // LoginLabel
+            // CSGOImagePanel
             // 
-            this.LoginLabel.AutoSize = true;
-            this.LoginLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginLabel.Location = new System.Drawing.Point(15, 33);
-            this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(36, 14);
-            this.LoginLabel.TabIndex = 0;
-            this.LoginLabel.Text = "Login";
-            
-            // 
-            // PasswordLabel
-            // 
-            this.PasswordLabel.AutoSize = true;
-            this.PasswordLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordLabel.Location = new System.Drawing.Point(15, 60);
-            this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(58, 14);
-            this.PasswordLabel.TabIndex = 1;
-            this.PasswordLabel.Text = "Password";
-           
-            // 
-            // EmailLabel
-            // 
-            this.EmailLabel.AutoSize = true;
-            this.EmailLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EmailLabel.Location = new System.Drawing.Point(15, 87);
-            this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(38, 14);
-            this.EmailLabel.TabIndex = 2;
-            this.EmailLabel.Text = "E-mail";
-            // 
-            // PasswordEmailLabel
-            // 
-            this.PasswordEmailLabel.AutoSize = true;
-            this.PasswordEmailLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordEmailLabel.Location = new System.Drawing.Point(15, 114);
-            this.PasswordEmailLabel.Name = "PasswordEmailLabel";
-            this.PasswordEmailLabel.Size = new System.Drawing.Size(58, 14);
-            this.PasswordEmailLabel.TabIndex = 3;
-            this.PasswordEmailLabel.Text = "Password";
-            // 
-            // LoginTextBox
-            // 
-            this.LoginTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.LoginTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LoginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.LoginTextBox.Location = new System.Drawing.Point(86, 26);
-            this.LoginTextBox.Name = "LoginTextBox";
-            this.LoginTextBox.Size = new System.Drawing.Size(100, 21);
-            this.LoginTextBox.TabIndex = 4;
-            this.LoginTextBox.TextChanged += new System.EventHandler(this.LoginTextBox_TextChanged);
-            // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(86, 53);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.Size = new System.Drawing.Size(100, 21);
-            this.PasswordTextBox.TabIndex = 5;
-            this.PasswordTextBox.UseSystemPasswordChar = true;
-            this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
-            // 
-            // EmailTextBox
-            // 
-            this.EmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.EmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.EmailTextBox.Location = new System.Drawing.Point(86, 80);
-            this.EmailTextBox.Name = "EmailTextBox";
-            this.EmailTextBox.Size = new System.Drawing.Size(100, 21);
-            this.EmailTextBox.TabIndex = 6;
-            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
+            this.CSGOImagePanel.BackgroundImage = global::CSGOLottery.Properties.Resources.logoCS;
+            this.CSGOImagePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.CSGOImagePanel.Location = new System.Drawing.Point(3, 166);
+            this.CSGOImagePanel.Name = "CSGOImagePanel";
+            this.CSGOImagePanel.Size = new System.Drawing.Size(200, 138);
+            this.CSGOImagePanel.TabIndex = 3;
             // 
             // PasswordEmailTextBox
             // 
@@ -162,14 +95,79 @@
             this.PasswordEmailTextBox.UseSystemPasswordChar = true;
             this.PasswordEmailTextBox.TextChanged += new System.EventHandler(this.PasswordEmailBox_TextChanged);
             // 
-            // CSGOImagePanel
+            // EmailTextBox
             // 
-            this.CSGOImagePanel.BackgroundImage = global::CSGOLottery.Properties.Resources.logoCS;
-            this.CSGOImagePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.CSGOImagePanel.Location = new System.Drawing.Point(3, 166);
-            this.CSGOImagePanel.Name = "CSGOImagePanel";
-            this.CSGOImagePanel.Size = new System.Drawing.Size(200, 138);
-            this.CSGOImagePanel.TabIndex = 3;
+            this.EmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.EmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.EmailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.EmailTextBox.Location = new System.Drawing.Point(86, 80);
+            this.EmailTextBox.Name = "EmailTextBox";
+            this.EmailTextBox.Size = new System.Drawing.Size(100, 21);
+            this.EmailTextBox.TabIndex = 6;
+            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
+            // 
+            // PasswordTextBox
+            // 
+            this.PasswordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.PasswordTextBox.Location = new System.Drawing.Point(86, 53);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.Size = new System.Drawing.Size(100, 21);
+            this.PasswordTextBox.TabIndex = 5;
+            this.PasswordTextBox.UseSystemPasswordChar = true;
+            this.PasswordTextBox.TextChanged += new System.EventHandler(this.PasswordTextBox_TextChanged);
+            // 
+            // LoginTextBox
+            // 
+            this.LoginTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.LoginTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LoginTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.LoginTextBox.Location = new System.Drawing.Point(86, 26);
+            this.LoginTextBox.Name = "LoginTextBox";
+            this.LoginTextBox.Size = new System.Drawing.Size(100, 21);
+            this.LoginTextBox.TabIndex = 4;
+            this.LoginTextBox.TextChanged += new System.EventHandler(this.LoginTextBox_TextChanged);
+            // 
+            // PasswordEmailLabel
+            // 
+            this.PasswordEmailLabel.AutoSize = true;
+            this.PasswordEmailLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordEmailLabel.Location = new System.Drawing.Point(15, 114);
+            this.PasswordEmailLabel.Name = "PasswordEmailLabel";
+            this.PasswordEmailLabel.Size = new System.Drawing.Size(58, 14);
+            this.PasswordEmailLabel.TabIndex = 3;
+            this.PasswordEmailLabel.Text = "Password";
+            // 
+            // EmailLabel
+            // 
+            this.EmailLabel.AutoSize = true;
+            this.EmailLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EmailLabel.Location = new System.Drawing.Point(15, 87);
+            this.EmailLabel.Name = "EmailLabel";
+            this.EmailLabel.Size = new System.Drawing.Size(38, 14);
+            this.EmailLabel.TabIndex = 2;
+            this.EmailLabel.Text = "E-mail";
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordLabel.Location = new System.Drawing.Point(15, 60);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(58, 14);
+            this.PasswordLabel.TabIndex = 1;
+            this.PasswordLabel.Text = "Password";
+            // 
+            // LoginLabel
+            // 
+            this.LoginLabel.AutoSize = true;
+            this.LoginLabel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginLabel.Location = new System.Drawing.Point(15, 33);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(36, 14);
+            this.LoginLabel.TabIndex = 0;
+            this.LoginLabel.Text = "Login";
             // 
             // SteamLogoPanel
             // 
@@ -180,7 +178,6 @@
             this.SteamLogoPanel.Name = "SteamLogoPanel";
             this.SteamLogoPanel.Size = new System.Drawing.Size(43, 35);
             this.SteamLogoPanel.TabIndex = 0;
-            
             this.SteamLogoPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseClick);
             // 
             // ProgressBar
@@ -232,7 +229,7 @@
             this.Controls.Add(this.SteamLabel);
             this.Controls.Add(this.SteamLogoPanel);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ForeColor = System.Drawing.Color.Silver;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Opacity = 0.98D;

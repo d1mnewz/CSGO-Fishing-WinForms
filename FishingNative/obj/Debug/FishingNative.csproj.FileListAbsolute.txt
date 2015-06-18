@@ -6,3 +6,4 @@ c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNa
 c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\CSGOLottery.Properties.Resources.resources
 c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\CSGOLottery.exe
 c:\users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\CSGOLottery.pdb
+C:\Users\zhluktenko\OneDrive\Visual Studio 2012\Projects\FishingNative\FishingNative\obj\Debug\FishingNative.csprojResolveAssemblyReference.cache
